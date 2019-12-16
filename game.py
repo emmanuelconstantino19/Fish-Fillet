@@ -35,7 +35,7 @@ score=0
 big_fish_size=2.2
 texture=()
 mouse_dir=1
-photos=['Fishleft1.png','Fishright1.png','Fishleft2.png','Fishright2.png','Fishleft3.png','Fishright3.png','Fishleft4.png','Fishright4.png','Fishleft5.png','Fishright5.png','Fishleft6.png','Fishright6.png','Fishleft7.png','Fishright7.png','Fishleft8.png','Fishright8.png','Fishleft9.png','Fishright9.png','Fishleft10.png','Fishright10.png','Fishleft11.png','Fishright11.png','background.jpg','menu.png']
+photos=['assets/Fishleft1.png','assets/Fishright1.png','assets/Fishleft2.png','assets/Fishright2.png','assets/Fishleft3.png','assets/Fishright3.png','assets/Fishleft4.png','assets/Fishright4.png','assets/Fishleft5.png','assets/Fishright5.png','assets/Fishleft6.png','assets/Fishright6.png','assets/Fishleft7.png','assets/Fishright7.png','assets/Fishleft8.png','assets/Fishright8.png','assets/Fishleft9.png','assets/Fishright9.png','assets/Fishleft10.png','assets/Fishright10.png','assets/Fishleft11.png','assets/Fishright11.png','assets/background.jpg','assets/menu.png']
 
 
 current_x = 200
@@ -181,11 +181,11 @@ class Game:
         score +=1
 
     def eating_sound(self):
-        s_file = pygame.mixer.Sound("eating.wav")
+        s_file = pygame.mixer.Sound("assets/eating.wav")
         s_file.play()
 
     def game_over_sound(self):
-        s_file = pygame.mixer.Sound("gameover.wav")
+        s_file = pygame.mixer.Sound("assets/gameover.wav")
         s_file.play()
 
 
@@ -237,7 +237,7 @@ class Game:
 
     def myint(self):
 
-        s_file = pygame.mixer.Sound("feeding-frenzy.wav")
+        s_file = pygame.mixer.Sound("assets/feeding-frenzy.wav")
         s_file.play()
 
         glMatrixMode(GL_PROJECTION)
