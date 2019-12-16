@@ -1,6 +1,6 @@
-# FishFillet!
+# Fish-Fillet!
 
-FishFillet is a P2P fish eating game developed using python3. This game serves as our project for IT 238.
+Fish-Fillet is a P2P fish eating game developed using python3. This game serves as our project for IT 238.
 
 ### Dependencies
 
