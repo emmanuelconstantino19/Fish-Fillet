@@ -20,7 +20,6 @@ class Server:
         self.sendPeers()
         host_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         host_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        print(self.peers)
         if len(self.peers)==0:
             host_socket.connect(('0.0.0.0', 10000))
         else:
@@ -103,11 +102,9 @@ class Client:
         sock.connect((address,10000))
         globals.sock = sock
 
-        print("START ITHREAD")
         iThread = threading.Thread(target=self.sendMsg)
         iThread.daemon = True
         iThread.start()
-        print("END ITHREAD")
 
 
         while True:
@@ -116,8 +113,7 @@ class Client:
                 break
             if data[0:1] == b'\x11':
                 self.updatePeers(data[1:])
-                print(p2p.peers)
-                print("got peers")
+                print("Got peers!")
                 globals.peers = p2p.peers
             # else:
             #     print(str(data, 'utf-8'))

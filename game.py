@@ -142,7 +142,7 @@ class Game:
         glLineWidth(2)
         glColor(1, 1, 0)  # Yellow Color
         glLoadIdentity()
-        glTranslate(x-60, y-25, 0)
+        glTranslate(x-60, y-40, 0)
         glRotate(180,1,0,0)
         glScale(.10, .10, .26)
         string = string.encode()  # conversion from Unicode string to byte string
